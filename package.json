@@ -25,6 +25,7 @@
   "dependencies": {
     "@types/morgan": "^1.7.35",
     "@types/node": "^10.12.14",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
     "reflect-metadata": "^0.1.12",

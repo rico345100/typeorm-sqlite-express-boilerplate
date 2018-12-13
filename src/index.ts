@@ -1,11 +1,14 @@
 import "reflect-metadata";
 import * as express from 'express';
 import * as morgan from 'morgan';
+import * as bodyParser from 'body-parser';
 import routes from './routes';
 import db from './db';
 
 const server = express();
 server.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
+server.use(bodyParser.urlencoded({ extended: false }))
+server.use(bodyParser.json());
 server.use(routes);
 
 server.listen({ port: 3000 }, () => console.log('Web Server is running on port 3000...\n'));
