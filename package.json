@@ -1,0 +1,39 @@
+{
+  "name": "typeorm-sqlite-express-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilderplate for building server app with Express + TypeORM and Sqlite3",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rico345100/typeorm-sqlite-express-boilerplate"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "typeorm",
+    "sqlite",
+    "db",
+    "boilerplate",
+    "express"
+  ],
+  "author": ".modernator",
+  "license": "ISC",
+  "dependencies": {
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.12.14",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "reflect-metadata": "^0.1.12",
+    "sqlite3": "^4.0.4",
+    "ts-node": "^7.0.1",
+    "typeorm": "^0.2.9",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.8"
+  }
+}
